@@ -66,6 +66,7 @@ group :test do
   gem 'guard-rubocop'
   gem 'rspec-rails', '~> 3.5'
   gem 'rubocop'
+  gem 'rubocop-rspec'
   gem 'shoulda-matchers'
   gem 'vcr'
   gem 'webmock'
