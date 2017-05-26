@@ -5,3 +5,7 @@ AllCops:
   TargetRubyVersion: 2.4
   Exclude:
     - db/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - Guardfile
