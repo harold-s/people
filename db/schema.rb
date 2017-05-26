@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,16 +12,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170514201224) do
-
-  create_table "people", force: :cascade do |t|
-    t.string "first_name", limit: 50
-    t.string "middle_name", limit: 50
-    t.string "last_name", limit: 50
-    t.string "email", limit: 150
-    t.index ["email"], name: "index_people_on_email", unique: true
-    t.index ["first_name"], name: "index_people_on_first_name"
-    t.index ["last_name"], name: "index_people_on_last_name"
+ActiveRecord::Schema.define(version: 20_170_514_201_224) do
+  create_table 'people', force: :cascade do |t|
+    t.string 'first_name', limit: 50
+    t.string 'middle_name', limit: 50
+    t.string 'last_name', limit: 50
+    t.string 'email', limit: 150
+    t.index ['email'], name: 'index_people_on_email', unique: true
+    t.index ['first_name'], name: 'index_people_on_first_name'
+    t.index ['last_name'], name: 'index_people_on_last_name'
   end
-
 end
