@@ -12,9 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20170514201224) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "people", force: :cascade do |t|
     t.string "first_name", limit: 50
     t.string "middle_name", limit: 50
